@@ -1,8 +1,8 @@
 title: Basic Example
 author:
-  name: "Jordan Scales"
-  twitter: "@jdan"
-  url: "http://jordanscales.com"
+  name: Jordan Scales
+  twitter: jdan
+  url: http://jordanscales.com
 output: basic.html
 
 --
@@ -23,6 +23,8 @@ This will be in a separate paragraph.
     ![markdown-logo](logo.gif)
     <img src="logo.gif" />
 
+[Here's a link](http://google.com).
+
 --
 
 ### A list of things
@@ -31,7 +33,7 @@ This will be in a separate paragraph.
 * Item B
 * Item gamma
 
-No need for multiple templates!
+No need for multiple templates! [Another link](http://google.com).
 
 --
 
@@ -42,3 +44,16 @@ No need for multiple templates!
 * Matching Pairs «»‹› “”‘’「」〈〉《》〔〕
 * Greek αβγδ εζηθ ικλμ νξοπ ρςτυ φχψω
 * currency  ¤ $ ¢ € ₠ £ ¥
+
+--
+
+### A code example
+
+    // cool looking code
+    var func = function (arg1) {
+        return function (arg2) {
+            return "arg1: " + arg1 + "arg2: " + arg2;
+        };
+    };
+
+    console.log(func(1)(2)); // result is three
